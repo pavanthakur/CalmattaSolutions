@@ -1,6 +1,8 @@
 # CalmattaSolutions
 
-This solution is implemented using RabbitMq and Docker.
+This solution is implemented using RabbitMq (hosted on Docker). 
++
+Below 3 layer architecture pattern (Client -API - DAL)
 
 **Calmatta.ChatClient** is the starting point of applciation. User initiates a chat here.
 
