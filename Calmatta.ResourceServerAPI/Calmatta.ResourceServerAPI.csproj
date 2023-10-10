@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <EnableNETAnalyzers>False</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Calmatta.DAL\Calmatta.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

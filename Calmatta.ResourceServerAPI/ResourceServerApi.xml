@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calmatta.ResourceServerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:Calmatta.ResourceServerAPI.Controllers.ChatController.Send(Calmatta.DAL.Model.ChatModel)">
+            <summary>
+            Sends a message to an available agent
+            </summary>
+            <param name="chatModel">Input chat message</param>
+            <response code="200">Message was sent successfully</response>  
+            <response code="400">Invalid message</response>  
+            <response code="422">No agents available to process the message</response>
+        </member>
+    </members>
+</doc>
